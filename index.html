@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Guess</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="counter">Result: <span id="correctCount">0</span> / <span id="totalCount">0</span></div>
+   
+    <button class="playButton">What sound it is?</button>
+    
+    <div class="input-container">
+        <input type="text" id="tip" placeholder="Take a guess!" style="display: none;">
+    </div>
+
+    <button id="replayButton" class="replayButton" style="display: none;">Replay</button>
+
+    <button id="solutionButton" class="solutionButton" style="display: none;">Solution</button>
+
+    <div id="solutionText" class="solutionText"></div>
+    
+
+    <div id="resultButtons" style="display: none;">
+        <button id="correctButton" class="correctButton">I was right</button>
+        <button id="incorrectButton" class="incorrectButton">I was wrong</button>
+    </div>
+
+    <audio id="audioPlayer" src=""></audio>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+body {
+    background-color: #d6d9da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: Cambria, Cochin;
+}
+
+.counter {
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50px;
+}
+
+.playButton {
+    font-size: 24px;
+    padding: 15px 30px;
+    background-color: #d8b9b9;
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin;
+}
+
+.playButton:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.input-container {
+    margin: 20px 0;
+    position: absolute;
+    bottom: 230px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    font-family: Cambria, Cochin;
+}
+
+.solutionButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #96a794;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    position: absolute;
+    bottom: 100px;
+    font-family: Cambria, Cochin;
+}
+
+.solutionButton:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.replayButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #4078f1;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    position: absolute;
+    bottom: 180px;
+    font-family: Cambria, Cochin;
+}
+
+.replayButton:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.solutionText {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+    position: absolute;
+    bottom: 50px;
+    font-family: Cambria, Cochin;
+    text-align: center;
+}
+
+.correctButton, .incorrectButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px;
+    position: absolute;
+    bottom: 50px;
+    font-family: Cambria, Cochin;
+}
+
+.correctButton {
+    background-color: #28a745;
+    left: 20px;
+}
+
+.incorrectButton {
+    background-color: #dc3545;
+    right: 20px;
+}
+
+.correctButton:hover, .incorrectButton:hover {
+    background-color: #7c7979;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for screens smaller than 600px */
+@media (max-width: 600px) {
+    .counter {
+        font-size: 24px; /* Adjusted font size for smaller screens */
+        top: 10px; /* Adjusted position to fit smaller screens */
+    }
+
+    .playButton, .solutionButton, .replayButton, .correctButton, .incorrectButton {
+        font-size: 18px; /* Smaller font size for buttons */
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+    }
+
+    input {
+        width: 90%; /* Adjusted width for input field */
+        font-size: 16px; /* Smaller font size for input field */
+    }
+
+    .solutionText {
+        font-size: 16px; /* Adjusted font size for solution text */
+        bottom: 20px;
+    }
+
+    .input-container {
+        bottom: 170px; /* Adjusted position for input container on smaller screens */
+    }
+
+    .replayButton {
+        bottom: 120px; /* Adjusted position for buttons on smaller screens */
+    }
+
+    .solutionButton {
+        bottom: 70px; /* Adjusted position for buttons on smaller screens */
+    }
+}
