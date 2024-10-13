@@ -25,8 +25,8 @@ body {
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
     margin-bottom: 30px;
     font-family: Cambria, Cochin;
 }
@@ -34,12 +34,16 @@ body {
 .playButton:hover {
     background-color: #f0f0f0;
     transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .input-container {
     margin: 20px 0;
     position: absolute;
     bottom: 230px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
 }
 
 input {
@@ -59,8 +63,8 @@ input {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
     position: absolute;
     bottom: 100px;
     font-family: Cambria, Cochin;
@@ -69,6 +73,7 @@ input {
 .solutionButton:hover {
     background-color: #f0f0f0;
     transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .replayButton {
@@ -79,8 +84,8 @@ input {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
     position: absolute;
     bottom: 180px;
     font-family: Cambria, Cochin;
@@ -89,6 +94,7 @@ input {
 .replayButton:hover {
     background-color: #f0f0f0;
     transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .solutionText {
@@ -114,6 +120,8 @@ input {
     position: absolute;
     bottom: 50px;
     font-family: Cambria, Cochin;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
 }
 
 .correctButton {
@@ -129,39 +137,40 @@ input {
 .correctButton:hover, .incorrectButton:hover {
     background-color: #7c7979;
     transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive adjustments for screens smaller than 600px */
 @media (max-width: 600px) {
     .counter {
-        font-size: 24px; /* Adjusted font size for smaller screens */
-        top: 10px; /* Adjusted position to fit smaller screens */
+        font-size: 24px;
+        top: 10px;
     }
 
     .playButton, .solutionButton, .replayButton, .correctButton, .incorrectButton {
-        font-size: 18px; /* Smaller font size for buttons */
-        padding: 10px 20px; /* Adjusted padding for smaller screens */
+        font-size: 18px; 
+        padding: 10px 20px;
     }
 
     input {
-        width: 90%; /* Adjusted width for input field */
-        font-size: 16px; /* Smaller font size for input field */
+        width: 90%;
+        font-size: 16px;
     }
 
     .solutionText {
-        font-size: 16px; /* Adjusted font size for solution text */
+        font-size: 16px;
         bottom: 20px;
     }
 
     .input-container {
-        bottom: 170px; /* Adjusted position for input container on smaller screens */
+        bottom: 170px;
     }
 
     .replayButton {
-        bottom: 120px; /* Adjusted position for buttons on smaller screens */
+        bottom: 120px;
     }
 
     .solutionButton {
-        bottom: 70px; /* Adjusted position for buttons on smaller screens */
+        bottom: 70px;
     }
 }
